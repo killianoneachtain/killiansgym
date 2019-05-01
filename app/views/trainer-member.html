@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'Member Assessments' /}
+
+#{trainermenu id:"trainer"/}
+
+<section>
+#{memberVitals member:member /}
+</section>
+
+
+<section class="ui raised segment">
+#{addComment member:_member, assessmentDetailsList:assessmentDetailsList /}
+
+</section>

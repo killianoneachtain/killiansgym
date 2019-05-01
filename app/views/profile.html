@@ -1,0 +1,25 @@
+#{extends 'main.html' /}
+#{set title:'Profile' /}
+
+#{menu id:"profile"/}
+
+
+<section class="ui raised segment">
+    <div class="ui form">
+        <div class="ui message">
+            <div class="header">Current Details</div>
+            <ul class="list">
+                <li>First Name : ${member.firstname}</li>
+                <li>Last Name : ${member.lastname}</li>
+                <li>Gender : ${member.gender}</li>
+                <li>Email : ${member.email} </li>
+                <!--<li>Password : ${member.password}</li>-->
+                <li>Address : ${member.address}</li>
+                <li>Height : ${member.height}cm</li>
+                <li>Weight : ${member.currentWeight}kg</li>
+            </ul>
+            <br>
+            <a href="/editprofile" class="ui medium yellow button">Edit Profile</a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,52 @@
+assessmentDetails(d1):
+  formattedDate: 03-Apr-2019 11:38:02
+  weight: 123.36
+  chest: 45.0
+  thigh: 12.5
+  upperArm: 23.3
+  waist: 32.0
+  hips: 38.0
+  trend: green
+  comment: Very good a great start
+assessmentDetails(d2):
+  formattedDate: 10-Apr-2019 09:16:14
+  weight: 123.05
+  chest: 46.1
+  thigh: 12.0
+  upperArm: 23.3
+  waist: 31.0
+  hips: 36.0
+  trend: green
+  comment: fantastic keep going
+assessmentDetails(d3):
+  formattedDate: 10-Apr-2019 00:34:54
+  weight: 123.45
+  chest: 46.9
+  thigh: 11.0
+  upperArm: 23.8
+  waist: 30.0
+  hips: 34.0
+  trend: red
+  comment: you're great
+
+Member(m1):
+  firstname: homer
+  lastname: simpson
+  gender: Male
+  email: homer@simpson.com
+  password: secret
+  address: 1547 Evergreen Terrace, Springfield, USA
+  height: 171
+  currentWeight: 123.05
+  numberOfAssessments: 3
+  assessmentdetailslist:
+    - d1
+    - d2
+    - d3
+
+Trainer(t1):
+  firstname: marge
+  lastname: simpson
+  email: marge@simpson.com
+  password: secret
+

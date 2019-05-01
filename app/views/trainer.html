@@ -1,0 +1,37 @@
+#{extends 'main.html' /}
+#{set title:'Trainer' /}
+
+#{trainermenu id:"trainer"/}
+
+
+<section class="ui raised segment">
+    <header class="ui header">
+    </header>
+    <table class="ui very basic striped table">
+        <thead>
+        <tr>
+            <th class="two wide center aligned"><i class="blue folder icon"></i><i class="large male icon"></i>
+                <i class="pink folder icon"></i><i class="large female icon"></i></th>
+            <th class="thirteen wide" style="font-size: 130%">MEMBER</th>
+            <th class="one wide"></th>
+        </tr>
+        </thead>
+        <tbody>
+        #{list items:memberList, as:'member'}
+        <tr>
+            <td class="center aligned">
+                <i class="big ${models.Analytics.checkGender(member.gender)} folder icon"></i>
+            </td>
+
+            <td style="font-size: 120%"><a href="/members/${member.id}" style="font-weight: bold">
+                ${member.firstname}  ${member.lastname} </a>
+                <p>${member.numberOfAssessments} Assessments</p></td>
+
+            <td class="center aligned" data-tooltip="Delete ${member.firstname}"><a href="/members/${member.id}/deletemember">
+                <i class="large red trash alternate icon"></i></a></td>
+        </tr>
+        #{/list}
+        </tbody>
+    </table>
+</section>
+

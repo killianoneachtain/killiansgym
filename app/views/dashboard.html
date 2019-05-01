@@ -1,0 +1,18 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+
+#{menu id:"dashboard"/}
+
+<section>
+#{memberVitals member:member /}
+</section>
+
+<section class="ui raised segment">
+#{addAssessment /}
+</section>
+
+<section class="ui raised segment">
+  <header class="ui header">Assessment History</header>
+  #{listAssessments assessmentdetailslist:assessmentdetailslist, member:member/}
+</section>
+

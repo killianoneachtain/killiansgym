@@ -1,0 +1,71 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+
+#{menu id:"admin"/}
+
+<section class="ui segment">
+    <h2 class="ui header">
+        All Known assessments in the Database:
+    </h2>
+    <table class="ui fixed table">
+        <thead>
+        <tr>
+            <th>ID </th>
+            <th>Weight</th>
+            <th>Chest</th>
+            <th>Thigh</th>
+            <th>Upper Arm</th>
+            <th>Waist</th>
+            <th>Hips</th>
+            <th>Member</th>
+        </tr>
+        </thead>
+        <tbody>
+        #{list items:assessmentdetails, as:'assessmentdetails'}
+        <tr>
+            <td> ${assessmentdetails.id} </td>
+            <td> ${assessmentdetails.weight} </td>
+            <td> ${assessmentdetails.chest} </td>
+            <td> ${assessmentdetails.thigh} </td>
+            <td> ${assessmentdetails.upperArm} </td>
+            <td> ${assessmentdetails.waist} </td>
+            <td> ${assessmentdetails.hips} </td>
+        </tr>
+        #{/list}
+        </tbody>
+    </table>
+</section>
+
+
+<section class="ui raised segment">
+    <header class="ui header">
+        Details of Current Members
+    </header>
+    <table class="ui celled table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Address</th>
+            <th>Height</th>
+            <th>Current Weight</th>
+        </tr>
+        </thead>
+        <tbody>
+        #{list items:memberDetails, as:'member'}
+        <tr>
+            <td data-label="Name">${member.firstname} ${member.lastname}</td>
+            <td data-label="Gender">${member.gender}</td>
+            <td data-label="Email">${member.email}</td>
+            <td data-label="Password">****</td>
+            <td data-label="Address">${member.address}</td>
+            <td data-label="Height">${member.height}</td>
+            <td data-label="Current Weight">${member.currentWeight}</td>
+        </tr>
+        #{/list}
+        </tbody>
+    </table>
+
+</section>

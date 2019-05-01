@@ -1,0 +1,66 @@
+<form class ="ui equal width form" action="/dashboard/addassessmentdetails" method="POST">
+        <div class="three fields">
+            <div class="required field">
+                <label>Weight</label>
+                <div class="ui right labeled input">
+                <input placeholder="00.00" type="number" step="0.01" min="30.0" max="250.0" name="weight" required>
+                    <div class="ui basic label">
+                        kg
+                    </div>
+                </div>
+            </div>
+
+            <div class="required field">
+                <label>Chest</label>
+                <div class="ui right labeled input">
+                <input placeholder="00.00" type="number" step="0.01" min="50" max="200" name="chest" required>
+                    <div class="ui basic label">
+                        cm
+                    </div>
+                </div>
+            </div>
+
+            <div class="required field">
+                <label>Thigh</label>
+                <div class="ui right labeled input">
+                <input placeholder="00.00" type="number" step="0.01" min="30" max="180" name="thigh"required>
+                    <div class="ui basic label">
+                        cm
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="three fields">
+            <div class="required field">
+                <label>Upper Arm</label>
+                <div class="ui right labeled input">
+                <input placeholder="00.00" type="number" step="0.01" min="10" max="150" name="upperArm" required>
+                    <div class="ui basic label">
+                        cm
+                    </div>
+                </div>
+            </div>
+            <div class="required field">
+                <label>Waist</label>
+                <div class="ui right labeled input">
+                <input placeholder="00.00" type="number" step="0.01" min="30" max="200" name="waist"required>
+                    <div class="ui basic label">
+                        cm
+                    </div>
+                </div>
+            </div>
+
+            <div class="required field">
+                <label>Hips</label>
+                <div class="ui right labeled input">
+                <input placeholder="00.00" type="number" step="0.01" min="30" max="200" name="hips" required>
+                    <div class="ui basic label">
+                        cm
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <button class="ui blue submit button">Add Assessment</button>
+    <i class="red asterisk icon"></i>Denotes required field<br>
+</form>

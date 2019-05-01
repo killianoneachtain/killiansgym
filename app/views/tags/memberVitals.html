@@ -1,0 +1,30 @@
+<section class="ui center aligned middle aligned segment">
+#{list items:_member, as:member}
+    <div class="ui four column grid" style=" font-family: helvetica; font-size: 120%;
+            text-transform: uppercase; font-weight: bold">
+        <div class="row" style="padding-bottom: 0%">
+            <div class="column"><i class="big ${models.Analytics.checkGender(_member.gender)} user icon"></i></div>
+            <div class="column"><i class="big
+${models.Analytics.iwiIconColour(models.Analytics.calcIdealBodyWeight(_member.height, _member.gender), _member.currentWeight)}
+      tachometer alternate icon"></i></div>
+            <div class="column">
+                <i class="big ${models.Analytics.iconColour(models.Analytics.assessBMI(_member.currentWeight, _member.height))}
+       heartbeat icon"></i>
+            ${models.Analytics.getBMI(_member.currentWeight, _member.height)}
+            </div>
+            <div class="three wide column">
+                <i class="big user md icon"></i></div>
+            <div class="one wide column">
+                #{analyticInformation member:_member /}
+            </div>
+        </div>
+        <div class="row" style="padding-top: 0%">
+            <div class="column">${_member.firstname} ${_member.lastname}</div>
+            <div class="column">IDEAL WEIGHT : ${models.Analytics.calcIdealBodyWeight(_member.height, _member.gender)} Kg</div>
+            <div class="column" style="padding-left: 5%">BMI</div>
+            <div class="three wide column">${models.Analytics.assessBMI( _member.currentWeight, _member.height)}</div>
+            <div class="one wide column"></div>
+        </div>
+    </div>
+#{/list}
+</section>
