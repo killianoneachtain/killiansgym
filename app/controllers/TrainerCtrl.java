@@ -30,12 +30,10 @@ public class TrainerCtrl extends Controller
 
     public static void addComment(long id,String comment)
     {
-
         Logger.info("Adding comment : " + comment);
         assessmentDetails assessment = assessmentDetails.findById(id);
         assessment.setComment(comment);
         assessment.save();
-
 
         redirect("/trainer" );
     }
@@ -50,5 +48,4 @@ public class TrainerCtrl extends Controller
         member.delete();
         render("trainer.html", memberList);
     }
-
 }

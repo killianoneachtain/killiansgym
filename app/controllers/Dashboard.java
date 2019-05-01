@@ -38,6 +38,7 @@ public class Dashboard extends Controller
         }
 
       }
+      // This sets the oldest(last) assessment in the list to blue
       member.assessmentdetailslist.get((member.assessmentdetailslist.size())-1).setTrend("blue");
       member.assessmentdetailslist.get((member.assessmentdetailslist.size())-1).save();
     }
@@ -46,7 +47,6 @@ public class Dashboard extends Controller
         member.assessmentdetailslist.get(0).setTrend("blue");
         member.assessmentdetailslist.get(0).save();
     }
-    //
 
     render ("dashboard.html", member, assessmentDetailsList);
   }
@@ -90,7 +90,6 @@ public class Dashboard extends Controller
     member.subtractFromAssessmentsCount();
     member.save();
     assessment.delete();
-    assessmentDetailsList.sort(new DateSorter());
     member.setCurrentWeight(member.assessmentdetailslist.get(0).getWeight());
 
 
