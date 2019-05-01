@@ -5,64 +5,64 @@
 
 <style>
 
-        body {font-family: Arial, Helvetica, sans-serif;}
+    body {font-family: Arial, Helvetica, sans-serif;}
 
-        /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
 
-        /* Modal Content */
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
 
-        /* The Close Button */
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
 
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
-    </head>
-    <body>
-
-
-    <!-- Trigger/Open The Modal -->
-
-    <div data-tooltip="Weight Information"><i id="myBtn" class="blue info circle icon link"></i></div>
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
 
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+<!-- Trigger/Open The Modal -->
 
-        <!-- Modal content -->
-        <div class="modal-content" style="text-transform: none">
-            <span class="close">&times;</span>
-            <br>
-            <section class="ui raised segment">
+<div data-tooltip="Weight Information"><i id="myBtn" class="big blue info circle icon link"></i></div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" style="text-transform: none">
+        <span class="close">&times;</span>
+        <br>
+        <section class="ui raised segment">
             <section class="ui red raised segment">
                 <table class="ui celled table">
                     <thead>
@@ -85,80 +85,80 @@
 
             <section class="ui red raised segment">
                 <table class="ui center aligned celled table">
-                <thead>
-                <tr><th>Body Mass Index</th>
-                    <th >Category</th>
-                    <th>Colour</th>
-                </tr></thead>
-                <tbody>
-                <tr>
-                    <td> 0.01 - 16</td>
-                    <td style="text-transform: uppercase"> Severe Thinness </td>
-                    <td><i class="big violet heartbeat icon"></i></td>
-                </tr>
-                <tr>
-                    <td> 16 - 17</td>
-                    <td style="text-transform: uppercase"> Moderate Thinness </td>
-                    <td><i class="big blue heartbeat icon"></i></td>
-                </tr>
-                <tr>
-                    <td> 17 - 18.5 </td>
-                    <td style="text-transform: uppercase"> Mild Thinness </td>
-                    <td><i class="big teal heartbeat icon"></i></td>
-                </tr>
-                <tr>
-                    <td> 18.5 - 25</td>
-                    <td style="text-transform: uppercase"> Normal </td>
-                    <td><i class="big green heartbeat icon"></i></td>
-                </tr>
-                <tr>
-                    <td> 25 - 30</td>
-                    <td style="text-transform: uppercase"> Overweight </td>
-                    <td><i class="big pink heartbeat icon"></i></td>
-                </tr>
-                <tr>
-                    <td> 30 - 35 </td>
-                    <td style="text-transform: uppercase"> Obese Class I </td>
-                    <td><i class="big yellow heartbeat icon"></i></td>
-                </tr>
-                <tr>
-                    <td> 35 - 40 </td>
-                    <td style="text-transform: uppercase"> Obese Class II </td>
-                    <td><i class="big orange heartbeat icon"></i></td>
-                </tr>
-                <tr>
-                    <td> > 40 </td>
-                    <td style="text-transform: uppercase"> Obese Class III </td>
-                    <td><i class="big red heartbeat icon"></i></td>
-                </tr>
-                <tr>
-                    <td> 0.00 </td>
-                    <td style="text-transform: uppercase"> Unknown</td>
-                    <td><i class="big olive heartbeat icon"></i></td>
-                </tr>
-                </tbody>
-            </table>
+                    <thead>
+                    <tr><th>Body Mass Index</th>
+                        <th >Category</th>
+                        <th>Colour</th>
+                    </tr></thead>
+                    <tbody>
+                    <tr>
+                        <td> 0.01 - 16</td>
+                        <td style="text-transform: uppercase"> Severe Thinness </td>
+                        <td><i class="big violet heartbeat icon"></i></td>
+                    </tr>
+                    <tr>
+                        <td> 16 - 17</td>
+                        <td style="text-transform: uppercase"> Moderate Thinness </td>
+                        <td><i class="big blue heartbeat icon"></i></td>
+                    </tr>
+                    <tr>
+                        <td> 17 - 18.5 </td>
+                        <td style="text-transform: uppercase"> Mild Thinness </td>
+                        <td><i class="big teal heartbeat icon"></i></td>
+                    </tr>
+                    <tr>
+                        <td> 18.5 - 25</td>
+                        <td style="text-transform: uppercase"> Normal </td>
+                        <td><i class="big green heartbeat icon"></i></td>
+                    </tr>
+                    <tr>
+                        <td> 25 - 30</td>
+                        <td style="text-transform: uppercase"> Overweight </td>
+                        <td><i class="big pink heartbeat icon"></i></td>
+                    </tr>
+                    <tr>
+                        <td> 30 - 35 </td>
+                        <td style="text-transform: uppercase"> Obese Class I </td>
+                        <td><i class="big yellow heartbeat icon"></i></td>
+                    </tr>
+                    <tr>
+                        <td> 35 - 40 </td>
+                        <td style="text-transform: uppercase"> Obese Class II </td>
+                        <td><i class="big orange heartbeat icon"></i></td>
+                    </tr>
+                    <tr>
+                        <td> > 40 </td>
+                        <td style="text-transform: uppercase"> Obese Class III </td>
+                        <td><i class="big red heartbeat icon"></i></td>
+                    </tr>
+                    <tr>
+                        <td> 0.00 </td>
+                        <td style="text-transform: uppercase"> Unknown</td>
+                        <td><i class="big olive heartbeat icon"></i></td>
+                    </tr>
+                    </tbody>
+                </table>
             </section>
-            </section>
+        </section>
 
-            <section class="ui secondary raised segment">
+        <section class="ui secondary raised segment">
             <section class="ui green raised segment">
-            <table class="ui celled table">
-                <thead>
-                <tr>
-                    <th>Ideal Weight Calculation : The Devine Formula</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td><i class="large female icon"></i>Women: Ideal Body Weight [kg] = 45.5 kg + 2.3 kg × (height[in] - 60)&#42</td>
-                </tr>
-                <tr>
-                    <td><i class="large male icon"></i>Men: Ideal Body Weight [kg] = 50 kg + 2.3 kg × (height[in] - 60)&#42</td>
-                </tr>
-                <tr><td>&#42 Note : We have converted the formula to work for your height in centimetres.</td>  </tr>
-                </tbody>
-            </table>
+                <table class="ui celled table">
+                    <thead>
+                    <tr>
+                        <th>Ideal Weight Calculation : The Devine Formula</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><i class="large female icon"></i>Women: Ideal Body Weight [kg] = 45.5 kg + 2.3 kg × (height[in] - 60)&#42</td>
+                    </tr>
+                    <tr>
+                        <td><i class="large male icon"></i>Men: Ideal Body Weight [kg] = 50 kg + 2.3 kg × (height[in] - 60)&#42</td>
+                    </tr>
+                    <tr><td>&#42 Note : We have converted the formula to work for your height in centimetres.</td>  </tr>
+                    </tbody>
+                </table>
             </section>
 
 
@@ -183,68 +183,68 @@
                     </tbody>
                 </table>
             </section>
-            </section>
+        </section>
 
-            <section class="ui  tertiary raised segment">
-                <table class="ui olive celled table">
-                    <thead>
-                    <tr><th>Trending Condition</th>
-                        <th>Trend Colour</th>
-                    </tr></thead>
-                    <tbody>
-                    <tr>
-                        <td> Your Current Weight is Lower than Your Previous Assessment Weight </td>
-                        <td><i class="ui small green tag label"></i></td>
-                    </tr>
-                    <tr>
-                        <td> Your Current Weight is Higher than Your Previous Assessment Weight </td>
-                        <td><i class="ui small red tag label"></i></td>
-                    </tr>
-                    <tr>
-                        <td> Your Starting Assessment </td>
-                        <td><i class="ui small blue tag label"></i></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </section>
+        <section class="ui  tertiary raised segment">
+            <table class="ui olive celled table">
+                <thead>
+                <tr><th>Trending Condition</th>
+                    <th>Trend Colour</th>
+                </tr></thead>
+                <tbody>
+                <tr>
+                    <td> Your Current Weight is Lower than Your Previous Assessment Weight </td>
+                    <td><i class="ui small green tag label"></i></td>
+                </tr>
+                <tr>
+                    <td> Your Current Weight is Higher than Your Previous Assessment Weight </td>
+                    <td><i class="ui small red tag label"></i></td>
+                </tr>
+                <tr>
+                    <td> Your Starting Assessment </td>
+                    <td><i class="ui small blue tag label"></i></td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
 
-
-        </div>
 
     </div>
 
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
+</div>
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
 
-        // When the user clicks the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
             modal.style.display = "none";
         }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+    }
 
 
-    </script>
+</script>
 
-    </body>
+</body>
 
-    <!-- Modal code has been taken from https://www.w3schools.com/howto/howto_css_modals.asp
-                                        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
-                                        -->
+<!-- Modal code has been taken from https://www.w3schools.com/howto/howto_css_modals.asp
+                                    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
+                                    -->
