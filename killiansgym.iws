@@ -145,6 +145,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -184,12 +185,12 @@
       <workItem from="1556668705233" duration="675000" />
       <workItem from="1556669483025" duration="4533000" />
       <workItem from="1556676063243" duration="1893000" />
-      <workItem from="1556680374024" duration="108000" />
+      <workItem from="1556680374024" duration="335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22030000" />
+    <option name="totallyTimeSpent" value="22257000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1243" height="1337" extended-state="0" />
