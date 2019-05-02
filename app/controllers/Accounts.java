@@ -40,7 +40,7 @@ public class Accounts extends Controller
         {
             Logger.info("Authentication successful");
             session.put("logged_in_Memberid", member.id);
-            redirect ("/dashboard");
+            redirect ("/memberctrl");
         }
         else
         if ((trainer != null) && (trainer.checkPassword(password) == true))
