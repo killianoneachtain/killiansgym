@@ -160,6 +160,6 @@ public class Analytics extends Model
     {
         float differential;
         differential = Math.abs(idealWeight - weight);
-        return differential;
+        return toTwoDecimalPlaces(differential);
     }
 }

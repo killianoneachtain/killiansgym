@@ -141,10 +141,10 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td><i class="large female icon"></i>Women: Ideal Body Weight [kg] = 45.5 kg + 2.3 kg × (height[in] - 60)&#42</td>
+                        <td><i class="large female icon"></i>Female: Ideal Body Weight [kg] = 45.5 kg + 2.3 kg × (height[in] - 60)&#42</td>
                     </tr>
                     <tr>
-                        <td><i class="large male icon"></i>Men: Ideal Body Weight [kg] = 50 kg + 2.3 kg × (height[in] - 60)&#42</td>
+                        <td><i class="large male icon"></i>Male: Ideal Body Weight [kg] = 50 kg + 2.3 kg × (height[in] - 60)&#42</td>
                     </tr>
                     <tr><td>&#42 Note : We have converted the formula to work for your height in centimetres.</td>  </tr>
                     </tbody>
@@ -152,27 +152,25 @@
             </section>
 
 
-            <section class="ui green aised segment">
-                <table class="ui celled table">
+            <section class="ui green raised segment">
+                <table class="ui celled structured table">
                     <thead>
                     <tr>
-                        <th style="color: ${models.Analytics.iwiIconColour(models.Analytics.calcIdealBodyWeight(_member.height, _member.gender), _member.currentWeight)}">
-                            Your Ideal Weight is: ${models.Analytics.calcIdealBodyWeight(_member.height, _member.gender)} Kg <br>
-                            Your Current Weight : ${_member.firstname} ${_member.lastname} is ${_member.currentWeight} Kg <br>
-                            You are ${models.Analytics.idealWeightDifferential(_member.currentWeight, models.Analytics.calcIdealBodyWeight(_member.height, _member.gender))}
-                             from your Ideal Weight!
-                        </th>
+                        <th> Your Ideal Weight Calculations</th>
                         <th>± 2.00Kg of Calculated Ideal Weight</th>
                         <th>Colour</th>
                     </tr></thead>
                     <tbody>
                     <tr>
-                        <td>Is your current weight within 2 Kg of Ideal Weight?</td>
+                        <td rowspan="2">style="color: ${models.Analytics.iwiIconColour(models.Analytics.calcIdealBodyWeight(_member.height, _member.gender), _member.currentWeight)}">
+                            Your Ideal Weight is: ${models.Analytics.calcIdealBodyWeight(_member.height, _member.gender)} Kg <br>
+                            Your Current Weight : ${_member.firstname} ${_member.lastname} is ${_member.currentWeight} Kg <br>
+                            You are ${models.Analytics.idealWeightDifferential(_member.currentWeight, models.Analytics.calcIdealBodyWeight(_member.height, _member.gender))} Kg
+                            from your Ideal Weight!</td>
                         <td> Yes </td>
                         <td><i class="big green tachometer alternate icon"></i></td>
                     </tr>
                     <tr>
-                        <td>Is your current weight within 2 Kg of Ideal Weight?</td>
                         <td> No </td>
                         <td><i class="big red tachometer alternate icon"></i></td>
                     </tr>
@@ -188,11 +186,11 @@
                     <th>Trend Colour</th>
                 </tr></thead>
                 <tbody>
-                <tr>
+                <tr class="positive">
                     <td> Your Current Weight is Lower than Your Previous Assessment Weight </td>
                     <td><i class="ui small green tag label"></i></td>
                 </tr>
-                <tr>
+                <tr class="negative">
                     <td> Your Current Weight is Higher than Your Previous Assessment Weight </td>
                     <td><i class="ui small red tag label"></i></td>
                 </tr>
