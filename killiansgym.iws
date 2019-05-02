@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e883cdf-a28e-435e-8ab3-fb944d7b818b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/tags/analyticInformation.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/analyticInformation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/listAssessments.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/listAssessments.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/tmp/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,15 +16,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tags/analyticInformation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="164" column="40" selection-start-line="164" selection-start-column="40" selection-end-line="164" selection-end-column="40" />
+            <state relative-caret-position="313">
+              <caret line="190" column="24" selection-start-line="190" selection-start-column="24" selection-end-line="190" selection-end-column="64" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#section#0;n#section#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#section#1;n#section#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/tags/listAssessments.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="82" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -65,7 +74,6 @@
         <option value="$PROJECT_DIR$/app/views/dashboard.html" />
         <option value="$PROJECT_DIR$/app/views/signup.html" />
         <option value="$PROJECT_DIR$/app/models/Member.java" />
-        <option value="$PROJECT_DIR$/app/views/tags/listAssessments.html" />
         <option value="$PROJECT_DIR$/app/views/tags/addComment.html" />
         <option value="$PROJECT_DIR$/app/models/assessmentDetails.java" />
         <option value="$PROJECT_DIR$/conf/dependencies.yml" />
@@ -80,6 +88,7 @@
         <option value="$PROJECT_DIR$/app/controllers/Accounts.java" />
         <option value="$PROJECT_DIR$/app/models/Analytics.java" />
         <option value="$PROJECT_DIR$/app/views/tags/analyticInformation.html" />
+        <option value="$PROJECT_DIR$/app/views/tags/listAssessments.html" />
       </list>
     </option>
   </component>
@@ -201,12 +210,12 @@
       <workItem from="1556676063243" duration="1893000" />
       <workItem from="1556680374024" duration="335000" />
       <workItem from="1556746840719" duration="2817000" />
-      <workItem from="1556816462982" duration="5527000" />
+      <workItem from="1556816462982" duration="6005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30601000" />
+    <option name="totallyTimeSpent" value="31079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1248" y="23" width="1243" height="1337" extended-state="0" />
@@ -322,13 +331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="87" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tags/listAssessments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -452,12 +454,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tags/analyticInformation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="164" column="40" selection-start-line="164" selection-start-column="40" selection-end-line="164" selection-end-column="40" />
+        <state relative-caret-position="313">
+          <caret line="190" column="24" selection-start-line="190" selection-start-column="24" selection-end-line="190" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#section#0;n#section#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#section#1;n#section#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tags/listAssessments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="82" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
         </state>
       </provider>
     </entry>
