@@ -75,9 +75,9 @@
                         <td>BMI = Weight (Kg) / (Height in Metres)&#178</td>
                     </tr>
                     <tr>
-                        <td style="color: ${models.Analytics.iconColour(models.Analytics.assessBMI(_member.startingWeight, _member.height))}">
+                        <td style="color: ${models.Analytics.iconColour(models.Analytics.determineBMICategory(_member.startingWeight, _member.height))}">
                             Your Current Body Mass Index, ${_member.firstname} ${_member.lastname}, is :
-                        ${models.Analytics.getBMI(_member.currentWeight, _member.height)}</td>
+                        ${models.Analytics.calculateBMI(_member.currentWeight, _member.height)}</td>
                     </tr>
                     </tbody>
                 </table>
@@ -92,43 +92,33 @@
                     </tr></thead>
                     <tbody>
                     <tr>
-                        <td> 0.01 - 16</td>
-                        <td style="text-transform: uppercase"> Severe Thinness </td>
+                        <td> 0.01 - 15.99/td>
+                        <td style="text-transform: uppercase"> SEVERELY UNDERWEIGHT </td>
                         <td><i class="big violet heartbeat icon"></i></td>
                     </tr>
                     <tr>
-                        <td> 16 - 17</td>
-                        <td style="text-transform: uppercase"> Moderate Thinness </td>
-                        <td><i class="big blue heartbeat icon"></i></td>
-                    </tr>
-                    <tr>
-                        <td> 17 - 18.5 </td>
-                        <td style="text-transform: uppercase"> Mild Thinness </td>
+                        <td> 16 - 18.49</td>
+                        <td style="text-transform: uppercase"> UNDERWEIGHT </td>
                         <td><i class="big teal heartbeat icon"></i></td>
                     </tr>
                     <tr>
-                        <td> 18.5 - 25</td>
-                        <td style="text-transform: uppercase"> Normal </td>
+                        <td> 18.5 - 24.99</td>
+                        <td style="text-transform: uppercase"> NORMAL </td>
                         <td><i class="big green heartbeat icon"></i></td>
                     </tr>
                     <tr>
-                        <td> 25 - 30</td>
-                        <td style="text-transform: uppercase"> Overweight </td>
-                        <td><i class="big pink heartbeat icon"></i></td>
-                    </tr>
-                    <tr>
-                        <td> 30 - 35 </td>
-                        <td style="text-transform: uppercase"> Obese Class I </td>
+                        <td> 25 - 29.99</td>
+                        <td style="text-transform: uppercase"> OVERWEIGHT </td>
                         <td><i class="big yellow heartbeat icon"></i></td>
                     </tr>
                     <tr>
-                        <td> 35 - 40 </td>
-                        <td style="text-transform: uppercase"> Obese Class II </td>
+                        <td> 30 - 34.99 </td>
+                        <td style="text-transform: uppercase"> MODERATELY OBESE </td>
                         <td><i class="big orange heartbeat icon"></i></td>
                     </tr>
                     <tr>
-                        <td> > 40 </td>
-                        <td style="text-transform: uppercase"> Obese Class III </td>
+                        <td> >= 35 </td>
+                        <td style="text-transform: uppercase"> SEVERELY OBESE </td>
                         <td><i class="big red heartbeat icon"></i></td>
                     </tr>
                     <tr>

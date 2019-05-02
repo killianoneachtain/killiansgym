@@ -11,7 +11,7 @@ import java.util.List;
 public class TrainerCtrl extends Controller
 {
     public static void index() {
-        Logger.info("Rendering Trainer Dashboard");
+        Logger.info("Rendering Trainer Homepage");
 
         List<Member> memberList = Member.findAll();
 

@@ -8,10 +8,10 @@ import play.mvc.Controller;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class Dashboard extends Controller
+public class MemberCtrl extends Controller
 {
   public static void index() {
-    Logger.info("Rendering Dashboard");
+    Logger.info("Rendering Member Home PAge");
     Member member = Accounts.getLoggedInMember();
     List<assessmentDetails> assessmentDetailsList = member.assessmentdetailslist;
     assessmentDetailsList.sort(new DateSorter());
@@ -64,7 +64,7 @@ public class Dashboard extends Controller
 
     Logger.info("Adding Assessment Details: " + weight +", " + chest +", "
     + thigh +", " + upperArm +", " + waist +", " + hips +"." + "Making Current Weight " + weight);
-    redirect("/dashboard");
+    redirect("/memberctrl");
   }
 
   public static void viewProfile()
@@ -93,7 +93,7 @@ public class Dashboard extends Controller
     member.setCurrentWeight(member.assessmentdetailslist.get(0).getWeight());
 
 
-    redirect ("/dashboard");
+    redirect ("/memberctrl");
   }
 
   public static void saveProfile(String firstname, String lastname, String gender,

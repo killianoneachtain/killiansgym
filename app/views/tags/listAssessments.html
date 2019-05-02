@@ -1,5 +1,5 @@
 #{list items:_member, as:member}
-<table class="ui striped ${models.Analytics.iconColour(models.Analytics.assessBMI(_member.currentWeight, _member.height))} celled table">#{/list}
+<table class="ui striped ${models.Analytics.iconColour(models.Analytics.determineBMICategory(_member.currentWeight, _member.height))} celled table">#{/list}
     <thead>
     <tr>
         <th>Date</th>

@@ -44,129 +44,100 @@ public class Analytics extends Model
         } else {
             return "red";
         }
-
     }
 
     public static String iconColour(String verdict)
     {
-        if(verdict.equals("Severe Thinness"))
+        if(verdict.equals("SEVERELY UNDERWEIGHT"))
         {
             return "violet";
         }
         else
-        if(verdict.equals("Moderate Thinness"))
-        {
-            return "blue";
-        } else
-        if(verdict.equals("Mild Thinness"))
+        if(verdict.equals("UNDERWEIGHT"))
         {
             return "teal";
         } else
-        if(verdict.equals("Normal"))
+        if(verdict.equals("NORMAL"))
         {
             return "green";
         } else
-        if(verdict.equals("Overweight"))
-        {
-            return "pink";
-        } else
-        if(verdict.equals("Obese Class I"))
+        if(verdict.equals("OVERWEIGHT"))
         {
             return "yellow";
         } else
-        if(verdict.equals("Obese Class II"))
+        if(verdict.equals("MODERATELY OBESE"))
         {
             return "orange";
         } else
-        if(verdict.equals("Obese Class III"))
+        if(verdict.equals("SEVERELY OBESE"))
         {
             return "red";
         } else return "olive";
-
     }
 
-    public static float getBMI(float weight, int height)
+    public static float calculateBMI(float weight, int height)
     {
         float v = toTwoDecimalPlaces(((weight/height/height) * 10000));
         return v;
     }
 
-    public static String assessBMI(float weight, int height)
+    public static String determineBMICategory(float weight, int height)
     {
-        float BMI = getBMI(weight, height);
+        float BMI = calculateBMI(weight, height);
         int BMIIndex = 0;
         String verdict="No Verdict";
 
 
-        if((BMI >0) &&(BMI <= 16))
+        if((BMI >0) &&(BMI < 16))
         {
             BMIIndex = 1;
         }
 
-        if((BMI > 16) && (BMI <=17))
+        if((BMI >=16) && (BMI <18.5))
         {
             BMIIndex = 2;
         }
 
-        if((BMI >17) && (BMI <=18.5))
+        if((BMI >= 18.5) && (BMI <25))
         {
             BMIIndex = 3;
         }
 
-        if((BMI > 18.5) && (BMI <=25))
+        if((BMI >= 25) && (BMI <30))
         {
             BMIIndex = 4;
         }
 
-        if((BMI > 25) && (BMI <=30))
+        if((BMI >= 30) && (BMI <35))
         {
             BMIIndex = 5;
         }
 
-        if((BMI > 30) && (BMI <=35))
+        if(BMI >= 35)
         {
             BMIIndex = 6;
         }
 
-        if((BMI > 35) && (BMI <=40))
-        {
-            BMIIndex = 7;
-        }
-
-        if(BMI > 40)
-        {
-            BMIIndex = 8;
-        }
-
         switch (BMIIndex) {
-            case 1:     verdict = "Severe Thinness";
-
+            case 1:     verdict = "SEVERELY UNDERWEIGHT";
                 break;
 
-            case 2:     verdict = "Moderate Thinness";
+            case 2:     verdict = "UNDERWEIGHT";
                 break;
 
-            case 3:     verdict="Mild Thinness";
+            case 3:     verdict="NORMAL";
                 break;
 
-            case 4:     verdict="Normal";
+            case 4:     verdict="OVERWEIGHT";
                 break;
 
-            case 5:     verdict="Overweight";
+            case 5:     verdict="MODERATELY OBESE";
                 break;
 
-            case 6:     verdict="Obese Class I";
-                break;
-
-            case 7:     verdict="Obese Class II";
-                //return verdict;
-                break;
-
-            case 8:     verdict="Obese Class III";
+            case 6:     verdict="SEVERELY OBESE";
                 break;
 
         }
-
         return verdict;
     }
 
@@ -183,6 +154,4 @@ public class Analytics extends Model
             return "olive";
         }
     }
-
-
 }
