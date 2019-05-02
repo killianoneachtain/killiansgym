@@ -75,7 +75,7 @@
                         <td>BMI = Weight (Kg) / (Height in Metres)&#178</td>
                     </tr>
                     <tr>
-                        <td style="color: ${models.Analytics.iconColour(models.Analytics.determineBMICategory(_member.startingWeight, _member.height))}">
+                        <td style="color: ${models.Analytics.iconColour(models.Analytics.determineBMICategory(_member.currentWeight,_member.height))}">
                             Your Current Body Mass Index, ${_member.firstname} ${_member.lastname}, is :
                         ${models.Analytics.calculateBMI(_member.currentWeight, _member.height)}</td>
                     </tr>
