@@ -1,5 +1,5 @@
 #{list items:_member, as:member}
-<table class="ui striped ${models.Analytics.iconColour(models.Analytics.determineBMICategory(_member.currentWeight, _member.height))} celled structured table">#{/list}
+<table class="ui striped ${models.Analytics.iconColour(models.Analytics.determineBMICategory(_member.currentWeight, _member.height))} celled table">#{/list}
     <thead>
     <tr>
         <th>Date</th>
@@ -33,10 +33,9 @@
     </tbody>
     <tfoot class="full-width very padded">
     <tr style="text-transform: capitalize;font-style: italic;font-weight: bold">
-        <th></th>
-        <th colspan="2"><i class="ui tiny olive tag label"></i> : WEIGHT DECREASE</th>
-        <th colspan="2"><i class="ui tiny red tag label"></i> : WEIGHT INCREASE</th>
-        <th colspan="5"><i class="ui tiny blue tag label"></i> : BASE ASSESSMENT</th>
+        <th colspan="10"><i class="ui tiny olive tag label"></i> : WEIGHT DECREASE |
+        <i class="ui tiny red tag label"></i> : WEIGHT INCREASE | 
+        <i class="ui tiny blue tag label"></i> : BASE ASSESSMENT</th>
     </tr>
     </tfoot>
 </table>
