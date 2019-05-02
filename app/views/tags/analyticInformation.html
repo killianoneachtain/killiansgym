@@ -156,8 +156,8 @@
                 <table class="ui celled table">
                     <thead>
                     <tr>
-                        <th style="color: ${models.Analytics.iwiIconColour(models.Analytics.calcIdealBodyWeight(member.height, member.gender), member.currentWeight)}">
-                            Your Ideal Weight is: ${models.Analytics.calcIdealBodyWeight(member.height, member.gender)} Kg"<br>
+                        <th style="color: ${models.Analytics.iwiIconColour(models.Analytics.calcIdealBodyWeight(_member.height, _member.gender), _member.currentWeight)}">
+                            Your Ideal Weight is: ${models.Analytics.calcIdealBodyWeight(_member.height, _member.gender)} Kg"<br>
                             Your Current Weight : ${_member.firstname} ${_member.lastname} is ${_member.currentWeight} Kg
                             </th>
                         <th>± 2.00Kg of Calculated Ideal Weight</th>
