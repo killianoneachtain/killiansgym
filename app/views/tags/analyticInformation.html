@@ -162,7 +162,7 @@
                     </tr></thead>
                     <tbody>
                     <tr>
-                        <td rowspan="2">style="color: ${models.Analytics.iwiIconColour(models.Analytics.calcIdealBodyWeight(_member.height, _member.gender), _member.currentWeight)}">
+                        <td rowspan="2" style="color: ${models.Analytics.iwiIconColour(models.Analytics.calcIdealBodyWeight(_member.height, _member.gender), _member.currentWeight)}">
                             Your Ideal Weight is: ${models.Analytics.calcIdealBodyWeight(_member.height, _member.gender)} Kg <br>
                             Your Current Weight : ${_member.firstname} ${_member.lastname} is ${_member.currentWeight} Kg <br>
                             You are ${models.Analytics.idealWeightDifferential(_member.currentWeight, models.Analytics.calcIdealBodyWeight(_member.height, _member.gender))} Kg
