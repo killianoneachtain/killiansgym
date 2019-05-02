@@ -20,11 +20,24 @@ public class Accounts extends Controller
     public static void register(String firstname, String lastname, String gender, String email, String password,
                                 String address, int height, float startingWeight )
     {
-        Logger.info("Registering new user " + email);
-        Member member = new Member(firstname, lastname, gender, email, password, address, height, startingWeight);
-        member.setCurrentWeight(startingWeight);
-        member.save();
-        redirect("/");
+        Member member = Member.findByEmail(email);
+
+        if(member != null)
+        {
+            if (member.getEmail().equals(email))
+            {
+                Logger.error("Email already exists : " + email );
+                render("emailexists.html");
+            }
+        }
+        else
+        {
+            Logger.info("Registering new user " + email);
+            Member newMember = new Member(firstname, lastname, gender, email, password, address, height, startingWeight);
+            newMember.setCurrentWeight(startingWeight);
+            newMember.save();
+            redirect("/login");
+        }
     }
 
     public static void authenticate(String email, String password)

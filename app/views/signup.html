@@ -7,18 +7,18 @@
         <form class="ui stacked segment form" action="/register" method="POST">
             <h3 class="ui header">Register</h3>
             <div class="two fields">
-                <div class="field">
+                <div class="required field">
                     <label>First Name</label>
                     <input placeholder="First Name" type="text" maxlength="12" name="firstname">
                 </div>
-                <div class="field">
+                <div class="required field">
                     <label>Last Name</label>
                     <input placeholder="Last Name" type="text"  maxlength="18" name="lastname">
                 </div>
             </div>
 
             <div class="ui selection dropdown">
-                <input type="hidden" name="gender">
+                <input type="hidden" name="gender" required>
                 <i class="dropdown icon"></i>
                 <div class="default text">Gender</div>
                 <div class="menu">
@@ -36,14 +36,37 @@
             .dropdown()
             ;</script>
 
-            <div class="field">
+            <div class="required field">
                 <label>Email</label>
                 <input placeholder="Email" type="email" name="email">
             </div>
-            <div class="field">
+
+            <div class="required field">
                 <label>Password</label>
-                <input type="password" name="password">
+                <input type="password" id="new_password" required>
+                <label>Confirm Password</label>
+                <input type="password" id="confirm_password" name="password" required>
+
+                <script>
+                    var password = document.getElementById("new_password")
+                            , confirm_password = document.getElementById("confirm_password");
+
+                    function validatePassword(){
+                        if(password.value !== confirm_password.value) {
+                            confirm_password.setCustomValidity("Passwords Don't Match");
+                        } else {
+                            confirm_password.setCustomValidity('');
+                        }
+                    }
+
+                    new_password.onchange = validatePassword;
+                    confirm_password.onkeyup = validatePassword;
+                </script>
+
+                <!--https://codepen.io/diegoleme/pen/surIK?css-preprocessor=sass-->
+
             </div>
+
             <div class="field">
                 <label>Address</label>
                 <input placeholder="Address" type="text" name="address">
@@ -70,6 +93,7 @@
             </div>
 
             <button class="ui blue submit button">Submit</button>
+            <i class="red asterisk icon"></i>Denotes required field
         </form>
     </div>
     <div class="column">
