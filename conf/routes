@@ -20,12 +20,12 @@ GET     /trainer                                            TrainerCtrl.index
 GET     /members/{id}                                       TrainerCtrl.displayMembers
 
 # Member
-POST    /memberctrl/addassessmentdetails                    memberctrl.addAssessmentDetails
-GET     /members/{_id}/deleteassessment/{id}                memberctrl.deleteAssessment
-GET     /memberctrl                                         memberctrl.index
-GET     /memberctrl/viewProfile                             memberctrl.viewProfile
-GET     /editprofile                                        memberctrl.editProfile
-POST    /saveProfile                                        memberctrl.saveProfile
+POST    /memberctrl/addassessmentdetails                    MemberCtrl.addAssessmentDetails
+GET     /members/{_id}/deleteassessment/{id}                MemberCtrl.deleteAssessment
+GET     /memberctrl                                         MemberCtrl.index
+GET     /memberctrl/viewProfile                             MemberCtrl.viewProfile
+GET     /editprofile                                        MemberCtrl.editProfile
+POST    /saveProfile                                        MemberCtrl.saveProfile
 
 # Logout
 GET     /logout                                             Accounts.logout
