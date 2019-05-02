@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
+import java.lang.Math;
 
 @Entity
 public class Analytics extends Model
@@ -153,5 +154,12 @@ public class Analytics extends Model
         {
             return "olive";
         }
+    }
+
+    public static float idealWeightDifferential(float weight, float idealWeight)
+    {
+        float differential;
+        differential = Math.abs(idealWeight - weight);
+        return differential;
     }
 }

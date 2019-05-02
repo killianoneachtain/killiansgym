@@ -121,7 +121,7 @@
                         <td style="text-transform: uppercase"> SEVERELY OBESE </td>
                         <td><i class="big red heartbeat icon"></i></td>
                     </tr>
-                    <tr>
+                    <tr style="">
                         <td> 0.00 </td>
                         <td style="text-transform: uppercase"> Unknown</td>
                         <td><i class="big olive heartbeat icon"></i></td>
@@ -157,9 +157,11 @@
                     <thead>
                     <tr>
                         <th style="color: ${models.Analytics.iwiIconColour(models.Analytics.calcIdealBodyWeight(_member.height, _member.gender), _member.currentWeight)}">
-                            Your Ideal Weight is: ${models.Analytics.calcIdealBodyWeight(_member.height, _member.gender)} Kg"<br>
-                            Your Current Weight : ${_member.firstname} ${_member.lastname} is ${_member.currentWeight} Kg
-                            </th>
+                            Your Ideal Weight is: ${models.Analytics.calcIdealBodyWeight(_member.height, _member.gender)} Kg <br>
+                            Your Current Weight : ${_member.firstname} ${_member.lastname} is ${_member.currentWeight} Kg <br>
+                            You are ${models.Analytics.idealWeightDifferential(_member.currentWeight, models.Analytics.calcIdealBodyWeight(_member.height, _member.gender))}
+                             from your Ideal Weight!
+                        </th>
                         <th>± 2.00Kg of Calculated Ideal Weight</th>
                         <th>Colour</th>
                     </tr></thead>
