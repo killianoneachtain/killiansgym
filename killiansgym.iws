@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e883cdf-a28e-435e-8ab3-fb944d7b818b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/tags/analyticInformation.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/analyticInformation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/killiansgym.iws" beforeDir="false" afterPath="$PROJECT_DIR$/killiansgym.iws" afterDir="false" />
-    </list>
+    <list default="true" id="2e883cdf-a28e-435e-8ab3-fb944d7b818b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/tmp/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -212,12 +209,12 @@
       <workItem from="1556680374024" duration="335000" />
       <workItem from="1556746840719" duration="2817000" />
       <workItem from="1556816462982" duration="7243000" />
-      <workItem from="1556825229992" duration="445000" />
+      <workItem from="1556825229992" duration="500000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32762000" />
+    <option name="totallyTimeSpent" value="32817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1248" y="23" width="1243" height="1337" extended-state="0" />
