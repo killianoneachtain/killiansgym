@@ -86,13 +86,13 @@
             <section class="ui red raised segment">
                 <table class="ui center aligned celled table">
                     <thead>
-                    <tr><th>Body Mass Index</th>
+                    <tr><th>Body Mass Index Value</th>
                         <th >Category</th>
                         <th>Colour</th>
                     </tr></thead>
                     <tbody>
                     <tr>
-                        <td> 0.01 - 15.99/td>
+                        <td> 0.01 - 15.99</td>
                         <td style="text-transform: uppercase"> SEVERELY UNDERWEIGHT </td>
                         <td><i class="big violet heartbeat icon"></i></td>
                     </tr>
@@ -155,7 +155,11 @@
             <section class="ui green aised segment">
                 <table class="ui celled table">
                     <thead>
-                    <tr><th>Your Current Weight : ${_member.firstname} ${_member.lastname} is ${_member.currentWeight} Kg</th>
+                    <tr>
+                        <th style="color: ${models.Analytics.iwiIconColour(models.Analytics.calcIdealBodyWeight(member.height, member.gender), member.currentWeight)}">
+                            Your Ideal Weight is: ${models.Analytics.calcIdealBodyWeight(member.height, member.gender)} Kg"<br>
+                            Your Current Weight : ${_member.firstname} ${_member.lastname} is ${_member.currentWeight} Kg
+                            </th>
                         <th>± 2.00Kg of Calculated Ideal Weight</th>
                         <th>Colour</th>
                     </tr></thead>
